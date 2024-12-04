@@ -1,0 +1,40 @@
+{
+  "name": "gestion-de-proyecto-backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "node_version": "20.14.0",
+  "scripts": {
+    "build": "tsc",
+    "local": "set AMBIENTE=local&& nodemon --exec npx ts-node src/app.ts",
+    "prod": "export AMBIENTE=produccion&& node --exec npx ts-node src/app.ts",
+    "qa": "export AMBIENTE=pruebas&& node --exec npx ts-node src/app.ts",
+    "start": "node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "helmet": "^8.0.0",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "moment-timezone": "^0.5.46",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.7",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/pg": "^8.11.10",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
