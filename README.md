@@ -1,6 +1,9 @@
 ## Microservicio Login
 Servicio que permite validar si un usuario existe en la base de datos, si esta activo y si las credenciales son correctar se genera un token de jsonwebtoken y muestra informacion del usuario.
 
+## Base de datos
+En la raiz del proyecto se encuentra una carpeta con el nombre **scripts-db** la cual tiene los archivos con los scripts para crear la estructura de la base de datos
+
 ## Configuración
 
 1. Clonar el repositorio:
